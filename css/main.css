@@ -1,0 +1,64 @@
+body {
+    background-color: #151517;
+    color: #EBEDF3;
+}
+
+.navbar {
+    background-color: #D93732;
+}
+
+.navbar-brand {
+    color: #EBEDF3;
+}
+
+.input-search {
+    background-color: #EBEDF3;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 14rem;
+    border-color: #242425;
+    padding: 0.5rem;
+}
+
+.input-search {
+    outline-color: #242425;
+}
+
+.btn-search {
+    background-color: #242425;
+    color: #EBEDF3;
+    border-color: #EBEDF3;
+    border-radius: 10px;
+    width: 5rem;
+    height: 2.5rem;
+    margin-left: 0.4rem;
+}
+
+::placeholder {
+    color: #242425;
+    opacity: 1;
+}
+
+.card {
+    background-color: #242425;
+    width: 100%;
+}
+
+.characters-container {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1rem 1rem;
+}
+
+.page-link {
+    background-color: #242425;
+    border-color: #EBEDF3;
+    color: #EBEDF3;
+}
+
+.pagination-container {
+    margin: 1.5rem;
+    text-align: center;
+}
