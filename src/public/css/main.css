@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-    background-color: #D93732;
+    background-color: #4052ab;
 }
 
 .navbar-brand {
@@ -13,7 +13,7 @@ body {
 
 .input-search {
     background-color: #EBEDF3;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 2.5rem;
     width: 14rem;
     border-color: #242425;
@@ -28,10 +28,18 @@ body {
     background-color: #242425;
     color: #EBEDF3;
     border-color: #EBEDF3;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 5rem;
     height: 2.5rem;
     margin-left: 0.4rem;
+    transition-duration: 0.4s;
+    
+}
+
+.btn-search:hover{
+    background-color: white;
+    color: black;
+    border: 1px black;
 }
 
 ::placeholder {
