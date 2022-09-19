@@ -1,5 +1,5 @@
 body {
-    background-color: #151517;
+    background-color: #FFC300;
     color: #EBEDF3;
 }
 
@@ -46,7 +46,8 @@ body {
 .row {
     display: grid;
     grid-auto-flow: row dense;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
     gap: 1rem 1rem;
 }
 
