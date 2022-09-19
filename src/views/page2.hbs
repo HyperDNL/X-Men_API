@@ -3,23 +3,29 @@
         {{#each chars}}
         {{#if this.alias }}
         <div class="card" style="width: 18rem;">
-            <img src="{{this.img}}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{this.alias}}</h5>
-                <h5 class="card-title">{{this.name}}</h5>
-                <p class="card-text">Description: {{this.description}}</p>
-                <p class="card-text">Powers: {{this.powers}}</p>
-                <p class="card-text">Affiliation: {{this.affiliation}}</p>
+            <img src="{{this.img}}" class="card-img-top" alt="..." data-bs-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="collapse" id="collapseExample">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.alias}}</h5>
+                    <h5 class="card-title">Name: {{this.name}}</h5>
+                    <p class="card-text">Description: {{this.description}}</p>
+                    <p class="card-text">Powers: {{this.powers}}</p>
+                    <p class="card-text">Affiliation: {{this.affiliation}}</p>
+                </div>
             </div>
         </div>
         {{else}}
         <div class="card" style="width: 18rem;">
-            <img src="{{this.img}}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{this.name}}</h5>
-                <p class="card-text">Description: {{this.description}}</p>
-                <p class="card-text">Powers: {{this.powers}}</p>
-                <p class="card-text">Affiliation: {{this.affiliation}}</p>
+            <img src="{{this.img}}" class="card-img-top" alt="..." data-bs-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="collapse" id="collapseExample">
+                <div class="card-body">
+                    <h5 class="card-title">Name: {{this.name}}</h5>
+                    <p class="card-text">Description: {{this.description}}</p>
+                    <p class="card-text">Powers: {{this.powers}}</p>
+                    <p class="card-text">Affiliation: {{this.affiliation}}</p>
+                </div>
             </div>
         </div>
         {{/if}}
