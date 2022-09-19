@@ -1,5 +1,5 @@
 body {
-    background-color: #FFC300;
+    background-color: #5C96B9;
     color: #EBEDF3;
 }
 
@@ -8,15 +8,15 @@ body {
 }
 
 .navbar-brand {
-    color: #EBEDF3;
+   color: #EBEDF3;
 }
 
 .input-search {
     background-color: #EBEDF3;
     border-radius: 5px;
     height: 2.5rem;
-    width: 14rem;
-    border-color: #242425;
+    width: 18rem;
+   border-color: #242425;
     padding: 0.5rem;
 }
 
@@ -25,9 +25,9 @@ body {
 }
 
 .btn-search {
-    background-color: #242425;
+    background-color: #a341b4;
     color: #EBEDF3;
-    border-color: #EBEDF3;
+    /*border-color: #EBEDF3;*/
     border-radius: 5px;
     width: 5rem;
     height: 2.5rem;
@@ -49,6 +49,8 @@ body {
 
 .card {
     background-color: #242425;
+    opacity: 70%;
+
 }
 
 .row {
@@ -60,12 +62,14 @@ body {
 }
 
 .page-link {
-    background-color: #242425;
+    background-color: #4052ab;
     border-color: #EBEDF3;
     color: #EBEDF3;
+    opacity: 70%;
 }
 
 .pagination-container {
     margin: 1.5rem;
     text-align: center;
+    
 }
