@@ -3,12 +3,18 @@ body {
     color: #EBEDF3;
 }
 
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 .navbar {
     background-color: #4052ab;
 }
 
 .navbar-brand {
-   color: #EBEDF3;
+    color: #EBEDF3;
 }
 
 .input-search {
@@ -16,30 +22,25 @@ body {
     border-radius: 5px;
     height: 2.5rem;
     width: 18rem;
-   border-color: #242425;
+    border-color: #242425;
     padding: 0.5rem;
-}
-
-.input-search {
     outline-color: #242425;
 }
 
 .btn-search {
     background-color: #a341b4;
     color: #EBEDF3;
-    /*border-color: #EBEDF3;*/
     border-radius: 5px;
     width: 5rem;
     height: 2.5rem;
     margin-left: 0.4rem;
     transition-duration: 0.4s;
-    
 }
 
-.btn-search:hover{
-    background-color: white;
-    color: black;
-    border: 1px black;
+.btn-search:hover {
+    background-color: #EBEDF3;
+    color: #242425;
+    border: 1px #242425;
 }
 
 ::placeholder {
@@ -49,27 +50,82 @@ body {
 
 .card {
     background-color: #242425;
-    opacity: 70%;
-
+    opacity: 80%;
+    width: 100%;
 }
 
-.row {
+.data-container {
+    justify-items: center;
+    align-items: stretch;
     display: grid;
     grid-auto-flow: row dense;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 2rem;
-    gap: 1rem 1rem;
+    margin-top: 1rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
 }
 
 .page-link {
     background-color: #4052ab;
     border-color: #EBEDF3;
     color: #EBEDF3;
-    opacity: 70%;
+    transition-duration: 0.4s;
+}
+
+.page-link:hover {
+    background-color: #EBEDF3;
 }
 
 .pagination-container {
     margin: 1.5rem;
     text-align: center;
-    
+}
+
+@media only screen and (max-width: 600px) {
+    .data-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .data-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .data-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .data-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .data-container {
+        justify-items: center;
+        align-items: stretch;
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 1rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
 }

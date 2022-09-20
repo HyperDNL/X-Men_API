@@ -8,8 +8,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             </ul>
-            <form class="d-flex" role="search">
-                <input onkeyup="search()" class="input-search" name="searchField" type="search" placeholder="Buscar"
+            <form method="GET" action="/search/{{name}}" class="d-flex" role="search">
+                <input onkeyup="search()" class="input-search" name="name" type="search" placeholder="Buscar"
                     aria-label="Buscar" id="search_text">
                 <button class="btn-search" type="submit" id="btn_search">Buscar</button>
             </form>
