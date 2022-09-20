@@ -28,14 +28,19 @@ router.get('/search', async (req, res) => {
     const s = req.query.name;
     const firstURL = "https://xmenapiheroku.herokuapp.com/api/characters/?name=";
     const fullURL = firstURL + s;
-    await axios
-        .get(fullURL, {
-            responseType: "json",
-        })
-        .then(function (response) {
-            const chars = response.data.results;
-            res.render('searchResults', { chars: chars });
-        });
+    if (s === '') {
+        res.redirect('/');
+    }
+    else {
+        await axios
+            .get(fullURL, {
+                responseType: "json",
+            })
+            .then(function (response) {
+                const chars = response.data.results;
+                res.render('searchResults', { chars: chars });
+            });
+    }
 });
 
 export default router;

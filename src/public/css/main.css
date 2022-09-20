@@ -17,6 +17,10 @@ body {
     color: #EBEDF3;
 }
 
+.navbar-toggler {
+    color: #a341b4;
+}
+
 .input-search {
     background-color: #EBEDF3;
     border-radius: 5px;
